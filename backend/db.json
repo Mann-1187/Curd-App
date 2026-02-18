@@ -1,0 +1,72 @@
+{
+  "employees": [
+    {
+      "id": "250a",
+      "firstname": "KM",
+      "middlename": "MANNU",
+      "lastname": "CHAURASIYA",
+      "dob": "2002-02-21",
+      "email": "mannuchaurasiya2002@gmail.com",
+      "maritalstatus": "single",
+      "phoneno": "08429292320",
+      "address": {
+        "street": "kotwan post rakba jangali patti dist kushinagar",
+        "city": "Kushinagar",
+        "state": "Tehsildar",
+        "country": "India",
+        "zipcode": "274406"
+      }
+    },
+    {
+      "id": "1a76",
+      "firstname": "shivam",
+      "middlename": "kumar",
+      "lastname": "CHAURASIYA",
+      "dob": "2000-10-05",
+      "email": "mannuchaurasiya2002@gmail.com",
+      "maritalstatus": "single",
+      "phoneno": "08429292320",
+      "address": {
+        "street": "kotwan post rakba jangali patti dist kushinagar",
+        "city": "Kushinagar",
+        "state": "Tehsildar",
+        "country": "India",
+        "zipcode": "274406"
+      }
+    },
+    {
+      "id": "0916",
+      "firstname": "sanjay",
+      "middlename": "kumar",
+      "lastname": "chauhan",
+      "dob": "2003-06-07",
+      "email": "sanjaychauhan2003@gmail.com",
+      "maritalstatus": "single",
+      "phoneno": "6394655374",
+      "address": {
+        "street": "babhanan",
+        "city": "basti",
+        "state": "UTTAR PRADESH",
+        "country": "India",
+        "zipcode": "274409"
+      }
+    },
+    {
+      "id": "9924",
+      "firstname": "sanjay",
+      "middlename": "kumar",
+      "lastname": "chauhan",
+      "dob": "2003-07-07",
+      "email": "sanjaychauhan2003@gmail.com",
+      "maritalstatus": "married",
+      "phoneno": "6394655374",
+      "address": {
+        "street": "babhanan",
+        "city": "basti",
+        "state": "UTTAR PRADESH",
+        "country": "India",
+        "zipcode": "274409"
+      }
+    }
+  ]
+}
