@@ -19,6 +19,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
 function displayEmployee(allEmployee){
     allEmployee.map((emp) => {
+        const empCard=document.createElement("article");
+        empCard.className="emp-card";
     empCard.innerHTML = `
 <header class="emp-header">
 <h3 class="emp-name">
