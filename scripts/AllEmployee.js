@@ -62,7 +62,7 @@ function displayEmployee(allEmployee){
         });
 
 
-        const editBtn = empCard.querySelector("edit-btn");
+        const editBtn = empCard.querySelector(".edit-btn");
         editBtn.addEventListener("click" , () => {
             handleEdit(emp.id);
         });
