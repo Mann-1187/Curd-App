@@ -19,42 +19,38 @@ window.addEventListener("DOMContentLoaded", () => {
 
 function displayEmployee(allEmployee){
     allEmployee.map((emp) => {
-        const empCard = document.createElement("article")
-        empCard.className = "emp-card";
+    empCard.innerHTML = `
+<header class="emp-header">
+<h3 class="emp-name">
+ ${emp.firstname} ${emp.middlename} ${emp.lastname}
+</h3>
+<span class="emp-id">ID: ${emp.id}</span>
+</header>
 
-        empCard.innerHTML = `
-        <header class="emp-header">
-        <h3 class="emp-name">
-        
-         ${emp.firstname} ${emp.middlename} ${emp.lastname}</h3>
-         <span class="emp-id">ID: ${emp.id}</span>
-         </header>
-         
-         <section class="emp-info">
-            <p><strong>Data of Birth:</strong> ${emp.dob}</p>
-            <p><strong>Matrial Status:</strong>${emp.maritalstatus}</p>
-         </section>
-         
-         <section class="emp-contact>
-            <p><strong>Email:</strong> ${emp.email}</p>
-            <p><strong>Phone:</strong>${emp.phoneno}</p>
-         </section>
+<section class="emp-info">
+   <p><strong>Date of Birth:</strong> ${emp.dob}</p>
+   <p><strong>Marital Status:</strong> ${emp.maritalstatus}</p>
+</section>
 
-         <section class="emp-address>
-            <p><strong>Address:</strong></p>
-            <p>
-            ${emp.address.street}, ${emp.address.city},<br>
-            ${emp.address.state}, ${emp.address.country} - ${emp.address.zipcode}
-            </p>
-         </section>
+<section class="emp-contact">
+   <p><strong>Email:</strong> ${emp.email}</p>
+   <p><strong>Phone:</strong> ${emp.phoneno}</p>
+</section>
 
-         <footer class="emp-actions">
-         <button class="btn edit-btn" data-id="${emp.id}">Edit</button>
-         <button class="btn delete-btn" data-id="${emp.id}">Delete</button>
-         </footer>
-         
-         
-        `;
+<section class="emp-address">
+   <p><strong>Address:</strong></p>
+   <p>
+   ${emp.address.street}, ${emp.address.city},<br>
+   ${emp.address.state}, ${emp.address.country} - ${emp.address.zipcode}
+   </p>
+</section>
+
+<footer class="emp-actions">
+<button class="btn edit-btn" data-id="${emp.id}">Edit</button>
+<button class="btn delete-btn" data-id="${emp.id}">Delete</button>
+</footer>
+`;
+
 
         const deleteBtn = empCard.querySelector(".delete-btn");
         deleteBtn.addEventListener("click", () => {
