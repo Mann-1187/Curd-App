@@ -2,7 +2,7 @@
   "name": "curdapp",
   "version": "1.0.0",
   "description": "",
-  "main": "scripts.js",
+  "main": "server.js",
   "dependencies": {
     "chalk": "^5.6.2",
     "chokidar": "^5.0.0",
